@@ -1,0 +1,14 @@
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\bin\Debug\netcoreapp2.1\MeassurementRest.deps.json
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\bin\Debug\netcoreapp2.1\MeassurementRest.runtimeconfig.json
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\bin\Debug\netcoreapp2.1\MeassurementRest.runtimeconfig.dev.json
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\bin\Debug\netcoreapp2.1\MeassurementRest.dll
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\bin\Debug\netcoreapp2.1\MeassurementRest.pdb
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.csprojAssemblyReference.cache
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.csproj.CoreCompileInputs.cache
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.RazorAssemblyInfo.cache
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.RazorAssemblyInfo.cs
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.AssemblyInfoInputs.cache
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.AssemblyInfo.cs
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.RazorTargetAssemblyInfo.cache
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.dll
+C:\Users\Kim\Desktop\3. Sem\MeassurementRest\MeassurementRest\obj\Debug\netcoreapp2.1\MeassurementRest.pdb
