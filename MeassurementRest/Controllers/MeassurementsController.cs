@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MeassurementRest.Models;
- 
+using System.Data;
+
 namespace MeassurementRest.Controllers
 {
     [Route("api/[controller]")]
@@ -57,15 +58,34 @@ namespace MeassurementRest.Controllers
 
         // GET: api/Meassurements/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public double Get(double id)
         {
-            return "value";
+            return id;
         }
 
         // POST: api/Meassurements
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Meassurement value)
         {
+            string sqlQuery = "INSERT INTO dbo.Meassurement (Preassure, Humidity, Temperatur) VALUES (@pressure, @humidity, @temperature)";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+            {
+                command.Parameters.Add("@pressure", SqlDbType.Float).Value = value.Pressure;
+                command.Parameters.Add("@humidity", SqlDbType.Float).Value = value.Humidity;
+                command.Parameters.Add("@temperature", SqlDbType.Float).Value = value.Temperature;
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+        // POST: api/Meassurements/add
+        [HttpPost]
+        [Route("add")]
+        public string add([FromBody] test objekt)
+        {
+            return objekt.testvalue;
         }
 
         // PUT: api/Meassurements/5
