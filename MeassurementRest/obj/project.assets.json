@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kim\\Desktop\\3. sem\\Mock3\\mock3\\MeassurementRest\\MeassurementRest.csproj",
+      "projectUniqueName": "C:\\Users\\Kim\\Desktop\\3. Sem\\MeassurementRest\\MeassurementRest\\MeassurementRest.csproj",
       "projectName": "MeassurementRest",
-      "projectPath": "C:\\Users\\Kim\\Desktop\\3. sem\\Mock3\\mock3\\MeassurementRest\\MeassurementRest.csproj",
+      "projectPath": "C:\\Users\\Kim\\Desktop\\3. Sem\\MeassurementRest\\MeassurementRest\\MeassurementRest.csproj",
       "packagesPath": "C:\\Users\\Kim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kim\\Desktop\\3. sem\\Mock3\\mock3\\MeassurementRest\\obj\\",
+      "outputPath": "C:\\Users\\Kim\\Desktop\\3. Sem\\MeassurementRest\\MeassurementRest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

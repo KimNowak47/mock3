@@ -58,9 +58,40 @@ namespace MeassurementRest.Controllers
 
         // GET: api/Meassurements/5
         [HttpGet("{id}", Name = "Get")]
-        public double Get(double id)
+        public Meassurement Get(int id)
         {
-            return id;
+            string sqlQuery = $"SELECT * from Meassurement Where id = {id} ";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand command = new SqlCommand(sqlQuery, connection);
+            command.Connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    int mId = reader.GetInt32(0);
+                    double pressure = reader.GetDouble(1);
+                    double humidity = reader.GetDouble(2);
+                    double temperatur = reader.GetDouble(3);
+                    DateTime time = reader.GetDateTime(4);
+
+                    var Meas = new Meassurement()
+                    {
+                        Id = mId,
+                        Pressure = pressure,
+                        Humidity = humidity,
+                        Temperature = temperatur,
+                        TimeStamp = time
+                    };
+
+                    return Meas;
+                }
+                else return null;
+
+            }    
+
+
+                
         }
 
         // POST: api/Meassurements
@@ -88,16 +119,20 @@ namespace MeassurementRest.Controllers
             return objekt.testvalue;
         }
 
-        // PUT: api/Meassurements/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
-        // DELETE: api/ApiWithActions/5
+        // DELETE: api/delete/5
         [HttpDelete("{id}")]
+        [Route("delete/{id}")]
         public void Delete(int id)
         {
+            string sqlQuery = $"DELETE from Meassurement Where id = {id} ";
+
+            SqlConnection connection = new SqlConnection(connectionString);
+            using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+            {    command.Connection.Open();
+
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
